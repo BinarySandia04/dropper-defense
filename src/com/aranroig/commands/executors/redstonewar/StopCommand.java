@@ -1,8 +1,9 @@
-package com.aranroig.commands.executors;
+package com.aranroig.commands.executors.redstonewar;
 
 import com.aranroig.DropperDefense;
 import com.aranroig.commands.SubCommand;
 import com.aranroig.logic.Game;
+import com.aranroig.logic.games.redstonewar.RedstoneWar;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -15,7 +16,7 @@ public class StopCommand implements SubCommand {
             Player p = (Player) commandSender;
 
             g.Terminate();
-            p.sendMessage("Stopped dropper defense game");
+            p.sendMessage("Game stopped");
             return true;
         }
         return false;

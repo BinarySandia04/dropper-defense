@@ -1,7 +1,7 @@
-package com.aranroig.commands.executors;
+package com.aranroig.commands.executors.dropperdefense;
 
-import com.aranroig.DropperDefense;
 import com.aranroig.commands.SubCommand;
+import com.aranroig.logic.games.dropperdefense.DropperDefenseGame;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -16,12 +16,12 @@ public class PlaceCommand implements SubCommand {
 
             switch(args[1]){
                 case "villager":
-                    DropperDefense.instance.currentGame.villagerLocation = p.getLocation();
+                    DropperDefenseGame.instance.villagerLocation = p.getLocation();
                     p.sendMessage(ChatColor.GREEN + "Villager placed successfully!");
 
                     break;
                 case "spawner":
-                    DropperDefense.instance.currentGame.spawnLocations.add(p.getLocation());
+                    DropperDefenseGame.instance.spawnLocations.add(p.getLocation());
                     p.sendMessage(ChatColor.GREEN + "Spawner placed successfully!");
                     break;
                 default:

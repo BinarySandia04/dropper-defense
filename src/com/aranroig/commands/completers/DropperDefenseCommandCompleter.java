@@ -3,12 +3,11 @@ package com.aranroig.commands.completers;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.TabCompleter;
-import org.bukkit.entity.Player;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainCommandCompleter implements TabCompleter {
+public class DropperDefenseCommandCompleter implements TabCompleter {
     @Override
     public List<String> onTabComplete(CommandSender commandSender, Command command, String label, String[] strings) {
         List<String> allExecutors = new ArrayList<String>() {

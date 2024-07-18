@@ -1,15 +1,13 @@
-package com.aranroig.logic;
+package com.aranroig.logic.games.dropperdefense;
 
 import com.aranroig.DropperDefense;
-import org.bukkit.Bukkit;
+import com.aranroig.logic.Game;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.*;
-import org.bukkit.inventory.ItemStack;
 import org.bukkit.scheduler.BukkitRunnable;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
@@ -24,7 +22,7 @@ public class Wave implements Runnable {
 
     private ArrayList<Location> spawners;
     public ArrayList<Mob> monsters;
-    private Game game;
+    private DropperDefenseGame game;
 
     private Random random = new Random();
 
@@ -33,7 +31,7 @@ public class Wave implements Runnable {
         this.spawners = spawners;
         this.difficulty = difficulty;
         this.monsters = new ArrayList<Mob>();
-        this.game = DropperDefense.instance.currentGame;
+        this.game = (DropperDefenseGame) DropperDefense.instance.currentGame;
 
         this.spawnedMonsters = 0;
     }

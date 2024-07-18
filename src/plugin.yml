@@ -8,3 +8,6 @@ commands:
   dd:
     description: DropperDefense main command
     usage: /<command> [start|stopMain]
+  rw:
+    description: Redstone war main command
+    usage: /<command>

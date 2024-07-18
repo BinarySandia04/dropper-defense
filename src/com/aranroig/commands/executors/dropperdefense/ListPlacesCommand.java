@@ -1,4 +1,4 @@
-package com.aranroig.commands.executors;
+package com.aranroig.commands.executors.dropperdefense;
 
 import com.aranroig.commands.SubCommand;
 import org.bukkit.command.Command;
