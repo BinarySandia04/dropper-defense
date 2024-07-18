@@ -1,0 +1,10 @@
+main: com.aranroig.DropperDefense
+name: DropperDefense
+version: 1.0
+author: Aran Roig
+api-version: 1.21
+description: Dropper defense plugin
+commands:
+  dd:
+    description: DropperDefense main command
+    usage: /<command> [start|stopMain]

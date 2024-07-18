@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="dropper-defense:jar">
+    <output-path>$USER_HOME$/campusredstone/plugins</output-path>
+    <root id="archive" name="dropper-defense.jar">
+      <element id="module-output" name="dropper-defense" />
+      <element id="extracted-dir" path="$USER_HOME$/Descargas/spigot-api-1.21-R0.1-20240716.103412-66-shaded.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
